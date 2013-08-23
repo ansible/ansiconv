@@ -1,4 +1,6 @@
-# ansiconv
+# ANSIConv
+
+*Version: 1.0.0*
 
 A Python module for converting ANSI coded text and converts it to either plain
 text or HTML.
@@ -6,6 +8,10 @@ text or HTML.
 **Test Coverage:** 100%
 
 ## Installing
+
+### From PyPI
+
+    $ pip install ansiconv
 
 ### From Git
 
