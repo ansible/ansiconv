@@ -1,7 +1,7 @@
 # ansiconv
 
-Converts ANSI coded text and converts it to either plain text
-or to HTML.
+A Python module for converting ANSI coded text and converts it to either plain
+text or HTML.
 
 ## Installing
 
