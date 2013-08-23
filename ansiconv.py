@@ -39,9 +39,9 @@ def to_html(ansi, replace_newline=False):
         command, text = _block_to_html(block)
 
         # The command "A" means move the cursor up, so we emulate that here.
-        if command == 'A':
+        if command == 'A' and len(parsed_blocks) > 0:
             parsed_blocks.pop()
-            while '\n' not in parsed_blocks[-1]:
+            while len(parsed_blocks) > 0 and '\n' not in parsed_blocks[-1]:
                 parsed_blocks.pop()
 
         parsed_blocks.append(text)
@@ -107,7 +107,7 @@ def _block_to_html(text):
     """Converts the given block of ANSI coded text to HTML.
 
     The text is only given back as HTML if the ANSI code is at the
-    beginning of the string (e.g. "[33mFoobar")
+    beginning of the string (e.g. "[0;33mFoobar")
 
     :param text: The text block to convert.
     :return The text as HTML
