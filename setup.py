@@ -33,6 +33,7 @@ setup(
         'testing': ['pytest'],
     },
     classifiers=[
+        "Development Status :: 5 - Production/Stable",
         "Topic :: Utilities",
     ],
 )
