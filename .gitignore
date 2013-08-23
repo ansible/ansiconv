@@ -1,0 +1,45 @@
+test.py
+
+# Docs Build
+docs/_build
+
+*.py[cod]
+
+# VirtualEnv
+env
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+__pycache__
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Dev folders
+.idea
+.mr.developer.cfg
+.project
+.pydevproject
