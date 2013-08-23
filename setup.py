@@ -16,7 +16,7 @@ class PyTest(TestCommand):
 
 setup(
     name="ansiconv",
-    version="0.1.0",
+    version="1.0.0",
     author="Dan Horrigan",
     author_email="dan@dhorrigan.com",
     url="https://bitbucket.org/dhrrgn/ansiconv",

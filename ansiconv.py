@@ -1,12 +1,6 @@
 """
-ansiconv
-
 Converts ANSI coded text and converts it to either plain text
 or to HTML.
-
-:author Dan Horrigan <dan@dhorrigan.com>
-:copyright 2013 Dan Horrigan
-:license MIT
 """
 import re
 
@@ -18,7 +12,7 @@ def to_plain(ansi):
     """Takes the given string and strips all ANSI codes out.
 
     :param ansi: The string to strip
-    :return The stripped string
+    :return: The stripped string
     """
     return re.sub(r'\x1B\[[0-9;]*[ABCDEFGHJKSTfmnsulh]', '', ansi)
 
@@ -31,7 +25,7 @@ def to_html(ansi, replace_newline=False):
 
     :param ansi: The ANSI text.
     :param replace_newline: Whether to replace newlines with HTML.
-    :return:
+    :return: The resulting HTML string.
     """
     blocks = ansi.split('\x1B')
     parsed_blocks = []
@@ -110,7 +104,7 @@ def _block_to_html(text):
     beginning of the string (e.g. "[0;33mFoobar")
 
     :param text: The text block to convert.
-    :return The text as HTML
+    :return: The text as HTML
     """
     match = re.match(r'^\[(?P<code>\d+(?:;\d+)*)?(?P<command>[Am])', text)
     if match is None:
