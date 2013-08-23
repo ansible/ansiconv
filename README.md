@@ -5,6 +5,8 @@
 A Python module for converting ANSI coded text and converts it to either plain
 text or HTML.
 
+**Documentation:** [http://pythonhosted.org/ansiconv/](http://pythonhosted.org/ansiconv/)
+
 **Test Coverage:** 100%
 
 ## Installing
