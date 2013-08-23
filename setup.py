@@ -25,7 +25,7 @@ setup(
     license='MIT',
     py_modules=['ansiconv'],
     tests_require=['pytest'],
-    test_suite='test_ansiconv',
+    test_suite='test.test_ansiconv',
     cmdclass={
         'test': PyTest
     },
