@@ -93,7 +93,7 @@ def css_rule(class_name, **properties):
     prop_str = lambda name, val: name.replace('_', '-') + ': ' + val
     return '{0} {{ {1}; }}'.format(
         class_name,
-        '; '.join([prop_str(prop, properties[prop]) for prop in properties])
+        '; '.join([prop_str(k, v) for k, v in properties.iteritems()])
     )
 
 
