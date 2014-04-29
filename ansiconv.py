@@ -5,7 +5,7 @@ or to HTML.
 import re
 
 supported_sgr_codes = [1, 3, 4, 9, 30, 31, 32, 33, 34, 35, 36, 37, 40, 41, 42,
-                       43, 44, 45, 46, 47]
+                       43, 44, 45, 46, 47, 90, 91, 92, 93, 94, 95, 96, 97 ]
 
 
 def to_plain(ansi):
@@ -76,7 +76,15 @@ def base_css(dark=True):
         css_rule('.ansi44', background_color="#0000FF"),
         css_rule('.ansi45', background_color="#FF00FF"),
         css_rule('.ansi46', background_color="#00FFFF"),
-        css_rule('.ansi47', background_color="#FFFFFF")
+        css_rule('.ansi47', background_color="#FFFFFF"),
+        css_rule('.ansi90', color="#000000"),
+        css_rule('.ansi91', color="#FF0000"),
+        css_rule('.ansi92', color="#00FF00"),
+        css_rule('.ansi93', color="#FFFF00"),
+        css_rule('.ansi94', color="#0000FF"),
+        css_rule('.ansi95', color="#FF00FF"),
+        css_rule('.ansi96', color="#00FFFF"),
+        css_rule('.ansi97', color="#FFFFFF")
     ])
 
 

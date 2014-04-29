@@ -79,6 +79,14 @@ def test_base_css_dark():
 .ansi45 { background-color: #FF00FF; }
 .ansi46 { background-color: #00FFFF; }
 .ansi47 { background-color: #FFFFFF; }
+.ansi90 { color: #000000; }
+.ansi91 { color: #FF0000; }
+.ansi92 { color: #00FF00; }
+.ansi93 { color: #FFFF00; }
+.ansi94 { color: #0000FF; }
+.ansi95 { color: #FF00FF; }
+.ansi96 { color: #00FFFF; }
+.ansi97 { color: #FFFFFF; }
 """.strip()
     actual = ansiconv.base_css()
     assert expected == actual
@@ -108,6 +116,14 @@ def test_base_css_light():
 .ansi45 { background-color: #FF00FF; }
 .ansi46 { background-color: #00FFFF; }
 .ansi47 { background-color: #FFFFFF; }
+.ansi90 { color: #000000; }
+.ansi91 { color: #FF0000; }
+.ansi92 { color: #00FF00; }
+.ansi93 { color: #FFFF00; }
+.ansi94 { color: #0000FF; }
+.ansi95 { color: #FF00FF; }
+.ansi96 { color: #00FFFF; }
+.ansi97 { color: #FFFFFF; }
 """.strip()
     actual = ansiconv.base_css(dark=False)
     assert expected == actual
